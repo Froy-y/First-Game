@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Creating multipule canvas elements to create LAYERS. frog under cars but ontop of logs etc etc-->
+    <div class="wrapper">
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+        <canvas id="canvas5"></canvas>
+    </div>
+
+    <script src="setup.js"></script> <!-- contains canvas setup, global variables and refrences to the sprites we use, basically everything we use-->
+    <script src="frogger.js"></script> <!--code to create and handle player character-->
+    <script src="particles.js"></script> <!--create dust trail under frog on dry land-->
+    <script src="ripples.js"></script> <!--create water ripples when hopping over water-->
+    <script src="obstacles.js"></script> <!--will hand cars, snails, turtles, and logs-->
+    <script src="utilities.js"></script> <!--all other bits like animation loops and event listeners -->
+</body>
+</html>

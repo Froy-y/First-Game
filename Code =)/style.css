@@ -1,0 +1,17 @@
+.wrapper {
+    border: 5px solid black; 
+    top: 50%;
+    left: 50%;
+    position: absolute; /* idk what this did but it made the border we just made go to the bottom right of the screen */
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%); /* this centered the block we just created */
+    background: url('background.png');
+}
+canvas { /* this is going to be area of the border we just made */
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
