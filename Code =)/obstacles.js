@@ -68,7 +68,7 @@ function initObstacles(){
     //lane 4
     for (let i = 0; i <2; i++){
         let x = i * 400;
-        carsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid * 2, grid, -2, 'log')
+        logsArray.push(new Obstacle(x, canvas.height - grid * 5 - 20, grid * 2, grid, -2, 'log')
         );
     }
 
